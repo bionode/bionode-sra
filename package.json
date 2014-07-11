@@ -1,0 +1,47 @@
+{
+  "name": "bionode-sra",
+  "description": "A Node.js wrapper for SRA Toolkit.",
+  "version": "0.0.1",
+  "homepage": "http://github.com/bionode/bionode-aspera",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bmpvieira/bionode-aspera.git"
+  },
+  "author": {
+    "name": "Bruno Vieira",
+    "email": "mail@bmpvieira.com"
+  },
+  "dependencies": {
+    "through2": "~0.4.1",
+    "JSONStream": "~0.8.4"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "should": "~3.0.1",
+    "istanbul": "~0.2.4",
+    "coveralls": "~2.6.1",
+    "request": "~2.37.0",
+    "docco": "~0.6.3"
+  },
+  "keywords": [
+    "download",
+    "ftp",
+    "wrapper",
+    "installer",
+    "streams",
+    "cli"
+  ],
+  "main": "index.js",
+  "bin": {
+    "bionode-aspera": "cli.js"
+  },
+  "scripts": {
+    "preinstall": "cd sra; make",
+    "test": "mocha --reporter spec && rm -rf test/SRR1509835.*",
+    "build-docs": "docco ./lib/bionode-sra.js",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && rm -rf ./coverage",
+    "coveralls": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf ./coverage"
+  },
+  "license": "MIT"
+}
