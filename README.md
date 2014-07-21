@@ -5,7 +5,7 @@
   <br/>
   <a href="http://bionode.io/">bionode.io</a>
 </p>
-# bionode-sra [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status](https://david-dm.org/bionode/bionode.png?theme=shields.io)](//david-dm.org/bionode/bionode)
+# bionode-sra [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![DOI][doi-image]][doi-url]
 
 > A Node.js wrapper for SRA Toolkit.
 
@@ -80,6 +80,9 @@ Check [ChooseALicense.com](http://choosealicense.com/licenses/mit) for details.
 [travis-image]: https://travis-ci.org/bionode/bionode-sra.png?branch=master
 [coveralls-url]: //coveralls.io/r/bionode/bionode-sra
 [coveralls-image]: https://coveralls.io/repos/bionode/bionode-sra/badge.png
-[depstat-url]: //david-dm.org/bionode/bionode-sra
-[depstat-image]: https://david-dm.org/bionode/bionode-sra.png
+[depstat-url]: http://david-dm.org/bionode/bionode-sra
+[depstat-image]: http://david-dm.org/bionode/bionode-sra.png
+[doi-url]: http://dx.doi.org/10.5281/zenodo.10979
+[doi-image]: https://zenodo.org/badge/3959/bionode/bionode-sra.png
+
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bionode/bionode-sra/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
