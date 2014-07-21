@@ -2,10 +2,10 @@
   "name": "bionode-sra",
   "description": "A Node.js wrapper for SRA Toolkit.",
   "version": "0.0.1",
-  "homepage": "http://github.com/bionode/bionode-aspera",
+  "homepage": "http://github.com/bionode/bionode-sra",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bmpvieira/bionode-aspera.git"
+    "url": "git://github.com/bmpvieira/bionode-sra.git"
   },
   "author": {
     "name": "Bruno Vieira",
@@ -34,7 +34,7 @@
   ],
   "main": "index.js",
   "bin": {
-    "bionode-aspera": "cli.js"
+    "bionode-sra": "cli.js"
   },
   "scripts": {
     "preinstall": "cd sra; make",

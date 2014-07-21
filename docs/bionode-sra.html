@@ -26,7 +26,7 @@
 <p>A Node.js wrapper for SRA Toolkit.</p>
 <p>doi: <a href="?">?</a>
 author: <a href="http://bmpvieira.com">Bruno Vieira</a>
-email: <a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#x6d;&#x61;&#x69;&#x6c;&#64;&#x62;&#109;&#112;&#x76;&#x69;&#x65;&#105;&#114;&#x61;&#46;&#x63;&#x6f;&#109;">&#x6d;&#x61;&#x69;&#x6c;&#64;&#x62;&#109;&#112;&#x76;&#x69;&#x65;&#105;&#114;&#x61;&#46;&#x63;&#x6f;&#109;</a>
+email: <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#109;&#97;&#105;&#108;&#x40;&#x62;&#109;&#x70;&#118;&#105;&#x65;&#x69;&#114;&#97;&#x2e;&#x63;&#111;&#x6d;">&#109;&#97;&#105;&#108;&#x40;&#x62;&#109;&#x70;&#118;&#105;&#x65;&#x69;&#114;&#97;&#x2e;&#x63;&#111;&#x6d;</a>
 license: <a href="https://raw.githubusercontent.com/bionode/bionode-sra/master/LICENSE">MIT</a></p>
 </blockquote>
 <hr>
@@ -117,7 +117,7 @@ fs.createReadStream(<span class="hljs-string">'sraFilesList.txt'</span>)
 
       <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> obj === <span class="hljs-string">'string'</span>) { obj = obj.split(<span class="hljs-string">' '</span>) }
 
-      <span class="hljs-keyword">if</span> (obj.length &gt; <span class="hljs-number">2</span>) { self.emit(<span class="hljs-string">'error'</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'Too many arguments for aspera'</span>)); next() }
+      <span class="hljs-keyword">if</span> (obj.length &gt; <span class="hljs-number">2</span>) { self.emit(<span class="hljs-string">'error'</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'Too many arguments'</span>)); next() }
 
       <span class="hljs-keyword">if</span> (obj.length === <span class="hljs-number">1</span>) { obj.push(<span class="hljs-string">'.'</span>) }
 
