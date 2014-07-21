@@ -8,7 +8,7 @@ require('mocha')
 
 
 describe("Extract fastq from SRA", function() {
-  this.timeout(60000);
+  this.timeout(600000);
   it("should take a srcFile and destDir strings and extract a fastq", function(done) {
     var sraURL = 'http://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR150/SRR1509835/SRR1509835.sra'
     var downloadSRA = request(sraURL)
