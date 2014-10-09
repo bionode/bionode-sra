@@ -16,15 +16,19 @@
     "JSONStream": "~0.8.4"
   },
   "devDependencies": {
-    "mocha": "~1.20.1",
-    "mocha-lcov-reporter": "0.0.1",
-    "should": "~4.0.4",
-    "istanbul": "~0.3.0",
     "coveralls": "~2.11.1",
+    "docco": "~0.6.3",
+    "istanbul": "~0.3.0",
     "request": "~2.37.0",
-    "docco": "~0.6.3"
+    "tap-spec": "^1.0.0",
+    "tape": "^3.0.0",
+    "testling": "^1.7.1"
   },
   "keywords": [
+    "bio",
+    "biology",
+    "bionode",
+    "bioinformatics",
     "download",
     "ftp",
     "wrapper",
@@ -38,7 +42,7 @@
   },
   "scripts": {
     "preinstall": "cd sra; make",
-    "test": "mocha --reporter spec && rm -rf test/SRR1509835.*",
+    "test": "node test/bionode-sra.js | tap-spec && rm -rf test/SRR1509835.*",
     "build-docs": "docco ./lib/bionode-sra.js",
     "coverage": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && rm -rf ./coverage",
     "coveralls": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf ./coverage"
