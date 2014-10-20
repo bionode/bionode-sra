@@ -1,7 +1,7 @@
 {
   "name": "bionode-sra",
   "description": "A Node.js wrapper for SRA Toolkit.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "http://github.com/bionode/bionode-sra",
   "repository": {
     "type": "git",
