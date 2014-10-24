@@ -12,8 +12,9 @@
     "email": "mail@bmpvieira.com"
   },
   "dependencies": {
-    "through2": "~0.5.1",
-    "JSONStream": "~0.8.4"
+    "JSONStream": "~0.8.4",
+    "minimist": "^1.1.0",
+    "through2": "~0.5.1"
   },
   "devDependencies": {
     "coveralls": "~2.11.1",
