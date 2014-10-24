@@ -5,16 +5,16 @@ var sra = require('./')
 
 var args = minimist(process.argv.slice(2))
 
-var command = args._[0]
-var srcFile = args._[1]
-var destDir = args._[2] || '.'
-
 var lastArg = args._[args._.length - 1]
 var wantsStdin = false
 if (lastArg === '-') {
   wantsStdin = true
   args._.pop()
 }
+
+var command = args._[0]
+var srcFile = args._[1]
+var destDir = args._[2] || '.'
 
 var sraStream = sra(command)()
 
