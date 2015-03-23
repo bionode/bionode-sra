@@ -2,6 +2,7 @@
 var JSONStream = require('JSONStream')
 var minimist = require('minimist')
 var sra = require('./')
+var split = require('split')
 
 var args = minimist(process.argv.slice(2))
 
@@ -24,8 +25,7 @@ if (srcFile) { sraStream.write([srcFile, destDir]) }
 
 if (wantsStdin) {
   process.stdin.setEncoding('utf8');
-  
-  process.stdin.on('data', function(data) {
+  process.stdin.pipe(split()).on('data', function(data) {
     if (data.trim() === '') { return }
     sraStream.write(data.trim())
   })
