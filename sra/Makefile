@@ -21,14 +21,14 @@ linux: build/sratoolkit.$(VERSION)-ubuntu64.tar.gz
 	mv build/$(patsubst %.tar.gz,%,$(<F))/bin bin
 
 build/sratoolkit.$(VERSION)-ubuntu64.tar.gz:
-	curl http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/$(VERSION)/$(@F) -o $@
+	curl https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/$(VERSION)/$(@F) -o $@
 
 mac: build/sratoolkit.$(VERSION)-mac64.tar.gz
 	cd build; tar xzvf $(<F)
 	mv build/$(patsubst %.tar.gz,%,$(<F))/bin bin
 
 build/sratoolkit.$(VERSION)-mac64.tar.gz:
-	curl http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/$(VERSION)/$(@F) -o $@
+	curl https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/$(VERSION)/$(@F) -o $@
 
 clean:
 	rm -rf build bin
