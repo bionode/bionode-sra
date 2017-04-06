@@ -24,8 +24,8 @@ sraStream.pipe(JSONStream.stringify(false)).pipe(process.stdout)
 if (srcFile) { sraStream.write([srcFile, destDir]) }
 
 if (wantsStdin) {
-  process.stdin.setEncoding('utf8');
-  process.stdin.pipe(split()).on('data', function(data) {
+  process.stdin.setEncoding('utf8')
+  process.stdin.pipe(split()).on('data', function (data) {
     if (data.trim() === '') { return }
     sraStream.write(data.trim())
   })
