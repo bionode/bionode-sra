@@ -5,22 +5,48 @@
   <br/>
   <a href="http://bionode.io/">bionode.io</a>
 </p>
-# bionode-sra [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![DOI][doi-image]][doi-url]
+
+
+# bionode-sra
 
 > A Node.js wrapper for SRA Toolkit.
 
-Install
--------
+[![npm](https://img.shields.io/npm/v/bionode-ncbi.svg?style=flat-square)](http://npmjs.org/package/bionode-ncbi)
+[![Travis](https://img.shields.io/travis/bionode/bionode-ncbi.svg?style=flat-square)](https://travis-ci.org/bionode/bionode-ncbi)
+[![Coveralls](https://img.shields.io/coveralls/bionode/bionode-ncbi.svg?style=flat-square)](http://coveralls.io/r/bionode/bionode-ncbi)
+[![Dependencies](http://img.shields.io/david/bionode/bionode-ncbi.svg?style=flat-square)](http://david-dm.org/bionode/bionode-ncbi)
+[![npm](https://img.shields.io/npm/dt/bionode-ncbi.svg?style=flat-square)](https://www.npmjs.com/package/bionode-ncbi)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/bionode/bionode)
 
-Install bionode-sra with [npm](//npmjs.org):
 
-```sh
-$ npm install bionode-sra
+## Install
+
+You need to install the latest Node.JS first, please check [nodejs.org](http://nodejs.org) or do the following:
+
+```bash
+# Ubuntu
+sudo apt-get install npm
+# Mac
+brew install node
+# Both
+npm install -g n
+n stable
 ```
-To use it as a command line tool, you can install it globally by adding ```-g``` .
 
-Usage
------
+To use `bionode-ncbi` as a command line tool, you can install it globally with `-g`.
+
+```bash
+npm install bionode-ncbi -g
+```
+
+Or, if you want to use it as a JavaScript library, you need to install it in your local project folder inside the `node_modules` directory by doing the same command **without** `-g`.
+
+```bash
+npm i bionode-ncbi # 'i' can be used as shortcut to 'install'
+```
+
+
+## Usage
 
 If you're using bionode-sra with Node.js, you can require the module:
 
@@ -38,51 +64,27 @@ $ bionode-sra fastq-dump SRR1509835.sra
 $ bionode-sra fastq-dump SRR1509835.sra fastqOutputDirectory
 ```
 
-Contributing
-------------
 
-To contribute, clone this repo locally and commit your code on a separate branch.
 
-Please write unit tests for your code, and check that everything works by running the following before opening a pull-request:
+## Documentation
 
-```sh
-$ npm test
+Check our documentation at [doc.bionode.io](http://doc.bionode.io) or do:
+
+```bash
+bionode-ncbi --help
 ```
 
-Please also check for code coverage:
 
-```sh
-$ npm run coverage
-```
+## Contributing
 
-To rebuild the documentation using the comments in the code:
+We welcome all kinds of contributions at all levels of experience, please read the [CONTRIBUTING.md](CONTRIBUTING.md) to get started!
 
-```sh
-$ npm run build-docs
-```
-Check the [issues](http://github.com/bionode/bionode-sra/issues) for ways to contribute.
 
-Contacts
---------
-Bruno Vieira <[mail@bmpvieira.com](mailto:mail@bmpvieira.com)> [@bmpvieira](//twitter.com/bmpvieira)
+## Communication channels
 
-Yannick Wurm ([yannick.poulet.org](http://yannick.poulet.org)) [@yannick__](//twitter.com/yannick__)
+Don't be shy! Come talk to us :smiley:
 
-License
--------
-
-bionode-sra is licensed under the [MIT](https://raw.github.com/bionode/bionode/master/LICENSE) license.  
-Check [ChooseALicense.com](http://choosealicense.com/licenses/mit) for details.
-
-[npm-url]: //npmjs.org/package/bionode-sra
-[npm-image]: https://badge.fury.io/js/bionode-sra.png
-[travis-url]: //travis-ci.org/bionode/bionode-sra
-[travis-image]: https://travis-ci.org/bionode/bionode-sra.png?branch=master
-[coveralls-url]: //coveralls.io/r/bionode/bionode-sra
-[coveralls-image]: https://coveralls.io/repos/bionode/bionode-sra/badge.png
-[depstat-url]: http://david-dm.org/bionode/bionode-sra
-[depstat-image]: http://david-dm.org/bionode/bionode-sra.png
-[doi-url]: http://dx.doi.org/10.5281/zenodo.10979
-[doi-image]: https://zenodo.org/badge/3959/bionode/bionode-sra.png
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bionode/bionode-sra/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+* **Email** [mail@bionode.io](mailto:mail@bionode.io)
+* **Chat room** [http://gitter.im/bionode/bionode](http://gitter.im/bionode/bionode)
+* **IRC** #bionode on Freenode
+* **Twitter** [@bionode](http://twitter.com/@bionode)
