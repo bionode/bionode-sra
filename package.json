@@ -1,7 +1,7 @@
 {
   "name": "bionode-sra",
   "description": "A Node.js wrapper for SRA Toolkit.",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "homepage": "http://github.com/bionode/bionode-sra",
   "repository": {
     "type": "git",
@@ -45,7 +45,6 @@
     "bionode-sra": "cli.js"
   },
   "scripts": {
-    "preinstall": "cd sra; make",
     "test": "standard && dependency-check . && node test/bionode-sra.js | tap-spec && rm -rf test/SRR1509835.*",
     "build-docs": "docco ./lib/bionode-sra.js",
     "coverage": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && rm -rf ./coverage",
